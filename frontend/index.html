@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Metadata for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External stylesheets and scripts (Tailwind CSS and jQuery) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body class="bg-gray-100 h-screen flex items-center justify-center">
+    <!-- Container for the form -->
+    <div class="bg-white p-8 rounded shadow-md max-w-md w-full">
+      <!-- Form for entering a number -->
+      <form class="space-y-4 flex flex-col">
+        <div>
+          <!-- Label for the number input -->
+          <label for="number" class="block text-sm font-medium text-gray-700"
+            >Enter a Number:</label
+          >
+
+          <!-- Number input field -->
+          <input
+            type="number"
+            id="number"
+            name="number"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+        </div>
+
+        <!-- Submit button to start the camera -->
+        <button
+          type="submit"
+          class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+        >
+          Submit And Start Camera
+        </button>
+      </form>
+
+      <!-- Button to stop the camera (initially disabled) -->
+      <button
+        id="stop_camera"
+        class="bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring focus:border-red-300 w-full my-2"
+      >
+        Stop Camera
+      </button>
+    </div>
+  </body>
+</html>
